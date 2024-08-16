@@ -22,7 +22,7 @@ const AppTheme = {
   colors: {
     ...DefaultTheme.colors,
     background: colors.SECONDARY,
-    primary: colors.SECONDARY,
+    primary: colors.CONTRAST,
   },
 };
 

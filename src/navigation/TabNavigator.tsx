@@ -43,7 +43,7 @@ const TabNavigator = () => {
         options={{
           tabBarIcon: props => {
             return (
-              <AntDesign name="search1" size={props.size} color={props.color} />
+              <AntDesign name="download" size={props.size} color={props.color} />
             );
           },
           tabBarLabel: 'DownloadImage',
