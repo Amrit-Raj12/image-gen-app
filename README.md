@@ -32,3 +32,6 @@ Follow these steps to set up and run the project:
 
    ```bash
    git clone https://github.com/your-username/ai-image-generator-app.git
+
+   
+![Imagitext-app-thumb](https://github.com/user-attachments/assets/dd89fb91-a801-4f88-84ab-4303399771d1)
