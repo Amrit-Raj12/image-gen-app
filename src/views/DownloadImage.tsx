@@ -21,12 +21,19 @@ import { requestStoragePermission } from 'utils/storagePermission';
 import RNFetchBlob from 'rn-fetch-blob';
 import { CameraRoll } from '@react-native-camera-roll/camera-roll';
 
+const initalData =  {
+  id:Date.now().toString(36) + Math.random().toString(36).substr(2, 9),
+  uri: 'https://res.cloudinary.com/dcdchgx6z/image/upload/v1722686117/ImagiTextAsserts/image13_anui8a.jpg',
+  prompt: 'A beautiful anime girl in purple hair and dress.'
+}
+
 
 
 const DownloadImage: FC<GeneratedImage> = props => {
 
   const route: any = useRoute();
-  const { newImage } = route.params;
+  const { newImage = initalData } = route.params || {};
+  
 
   const dispatch = useDispatch();
   

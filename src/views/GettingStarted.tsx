@@ -116,7 +116,7 @@ const GettingStarted: FC<Props> = ({onGetStarted}) => {
           </View>
         </View>
         <LinearGradient
-          colors={['rgba(0, 0, 0, 0)', 'rgba(2,13,34, 1)', 'rgba(2,13,34, 1)']}
+          colors={['rgba(0, 0, 0, 0)', 'rgba(83,33,140, 1)', 'rgba(83,33,140, 1)']}
           style={styles.linearGradient}>
           <View style={styles.bottomCard}>
             <Text style={styles.cardHeading}>
@@ -198,14 +198,23 @@ const styles = StyleSheet.create({
   },
   button: {
     width: '100%',
-    borderRadius: 20,
-    backgroundColor: colors.CONTRAST,
+    // borderRadius: 20,
+    backgroundColor: 'purple',
     padding: 10,
     alignItems: 'center',
     margin: 10,
+    borderBottomColor: 'indigo',
+    borderBottomWidth: 4,
+    borderBottomLeftRadius: 20,
+    borderBottomRightRadius: 20,
+    borderTopEndRadius: 20,
+    shadowColor: '#CDA7F3',
+    shadowRadius: 10,
+    elevation: 10,
+    shadowOffset: {width: 0, height: 10},
   },
   buttonText: {
-    color: colors.PRIMARY,
+    color: colors.CONTRAST,
     fontSize: 16,
     fontWeight: 'bold',
   },
